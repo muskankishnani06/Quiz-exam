@@ -1,0 +1,183 @@
+/* Simple, clean styling for the JavaScript Quiz */
+
+body {
+  background-image: url("./assest/Neon\ Coder’s\ Cozy\ Workspace.png");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  min-height: 100vh;
+}
+/* Main quiz card */
+.quiz-card {
+  max-width: 820px;
+  margin: 40px auto;
+  padding: 12px;
+  background: rgba(255, 255, 255, 0.96);
+  border: 1px solid rgba(255, 255, 255, 0.7);
+  border-radius: 28px;
+  box-shadow: 0 15px 45px rgba(0, 0, 0, 0.35);
+}
+
+/* Inner card */
+.quiz-card .card {
+  border: 1px solid #e5e7eb;
+  border-radius: 20px;
+  background: #ffffff;
+}
+
+/* Card content */
+.quiz-card .card-body {
+  padding: 30px;
+}
+/* Quiz heading */
+.quiz-card h1 {
+  color: #28254a;
+  font-size: 38px;
+  font-weight: 800;
+  text-align: center;
+  letter-spacing: -1px;
+  margin-bottom: 30px;
+}
+
+.quiz-card h1 i {
+  color: #6557e8;
+}
+
+/* Question number badge */
+#qnsNumber {
+  display: inline-block;
+  padding: 10px 17px;
+  color: #5144c9;
+  background: #eeecff;
+  border: 1px solid #dcd7ff;
+  border-radius: 12px;
+  font-size: 15px;
+  font-weight: 700;
+  box-shadow: 0 3px 8px rgba(91, 75, 210, 0.08);
+}
+
+/* Timer badge */
+#timer {
+  display: inline-block;
+  padding: 10px 17px;
+  color: #d9485f;
+  background: #fff0f2;
+  border: 1px solid #ffd7dd;
+  border-radius: 12px;
+  font-size: 15px;
+  font-weight: 700;
+  font-variant-numeric: tabular-nums;
+  box-shadow: 0 3px 8px rgba(217, 72, 95, 0.08);
+}
+
+/* Question text */
+#qns {
+  color: #292644;
+  font-size: 25px;
+  font-weight: 700;
+  line-height: 1.5;
+  text-align: center;
+  margin: 35px 0 30px;
+}
+
+/* Quiz heading */
+.quiz-card h1 {
+  color: #24243e;
+  font-weight: 700;
+  letter-spacing: -1px;
+  margin-bottom: 28px;
+}
+
+/* Question */
+#qns {
+  color: #252541;
+  font-size: 24px;
+  font-weight: 600;
+  margin: 35px 0 28px;
+}
+
+/* Answer options */
+#options button {
+  width: 100%;
+  padding: 12px 16px;
+  margin-bottom: 12px;
+  color: #4545c5;
+  background: #f8f8ff;
+  border: 1px solid #d7d8ff;
+  border-radius: 12px;
+  transition: 0.25s ease;
+}
+
+/* Hover effect */
+#options button:hover {
+  background: #ededff;
+  border-color: #6965f5;
+  transform: translateY(-2px);
+  box-shadow: 0 5px 14px rgba(91, 83, 230, 0.15);
+}
+
+/* Next button */
+#next-btn {
+  width: 100%;
+  padding: 14px;
+  margin-top: 20px;
+  background: linear-gradient(135deg, #5265f5, #7848dc);
+  color: rgb(37, 55, 35);
+  border: none;
+  border-radius: 12px;
+  font-size: 16px;
+  font-weight: 600;
+  transition: 0.25s ease;
+}
+
+#next-btn:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 7px 18px rgba(91, 83, 230, 0.3);
+}
+
+/* Question number and timer */
+#qnsNumber,
+#timer {
+  padding: 10px 14px;
+  border-radius: 10px;
+  font-weight: 600;
+}
+
+/* Mobile responsive */
+
+@media (max-width: 600px) {
+  .quiz-card h1 {
+    font-size: 28px;
+  }
+
+  #qns {
+    font-size: 20px;
+    margin: 25px 0;
+  }
+
+  #qnsNumber,
+  #timer {
+    padding: 8px 10px;
+    font-size: 13px;
+  }
+}
+@media (max-width: 600px) {
+  .quiz-card {
+    margin: 20px 12px;
+    padding: 8px;
+    border-radius: 20px;
+  }
+
+  .quiz-card .card-body {
+    padding: 18px;
+  }
+
+  .quiz-card h1 {
+    font-size: 27px;
+  }
+
+  #qns {
+    font-size: 20px;
+  }
+}
